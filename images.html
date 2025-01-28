@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        
+        <style>
+            
+            .wrapper, .google-wrapper {
+                
+                display: flex;
+                align-items:center;
+                justify-content:center;
+                border:none;
+                background-color:transparent;
+                
+            }
+
+            .wrapper{
+                margin-top:30px;
+                width:100vw;
+
+            }
+            .google-wrapper{
+               margin-top: 10vw;
+               position: relative;
+               width: max-content;
+               margin-left: auto;
+               margin-right: auto;
+            }
+            .google-wrapper p {
+                position: absolute;
+                font-size: 20px;
+                color: blue;
+                top:60px;
+                left:236px;
+                
+
+            }
+
+
+
+            
+
+
+            #search {
+                --padding : 8px; /* VARIABLE */
+                display: flex;
+                align-items: center;
+                position: relative;
+                right: auto;
+                left: auto;
+                padding: var(--padding);
+                border-radius: 28px;
+                box-shadow:0px 1px 5px 0px rgb(139, 139, 139);
+                padding-left: 20px;
+            }
+
+            .search-input {
+                height:30px;
+                border: none;
+                font-size: 16px;
+                font-family: 'lexend' , sans-serif;
+                margin-left: var(--padding);
+                outline: none;
+                border: none;
+                background: transparent;
+                color: #161616;
+            }
+
+            .search-submit{
+                margin: 10px;
+                font-family: sans-serif;
+                padding: 10px;
+                outline: none;
+                border: none;
+                color:#333
+                
+            }
+
+            .extras {
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                outline: none;
+
+            }
+
+            .other-pages {
+                margin:40px;
+                text-align: end;
+            }
+
+            .page {
+                margin: 20px;
+                color: black;
+                font-size: 15px;
+                text-decoration-line: none;
+                font-family:sans-serif;
+            }
+
+            /* RISPONSIVE PAGE.... setup */
+            @media (min-width:600px){
+                #search{
+                    width: 500px;
+                }
+                .search-input{
+                    width: 450px;
+                }
+            }
+
+            @media (min-width:1200px){
+                #search{
+                    width: 550px;
+                    
+                }
+                .search-input{
+                    width: 500px;
+                }
+                
+
+
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="other-pages">
+            <a href = C:\Users\DELL\Documents\Aska.code\CS50web\week-0\project-1\search\index.html class="page" >Google</a>
+           
+        </div> 
+        <div class="google-wrapper">
+            <img src="images.png" alt="google" width="300px">
+            <p>images</p>
+        </div>
+        
+        <div class = "wrapper">  
+            
+            <form action="https://images.google.com/images" >
+                <div id="search">
+                    <span class="material-icons">search</span>
+                    <input type="text" name="q" placeholder="search" class = "search-input">
+                    
+                </div>
+                <div class="extras">
+                    <input  type="submit" value="Google Search" class="search-submit">
+                </div>
+                
+            </form>
+        </div>
+    </body>
+</html>

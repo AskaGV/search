@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced Search</title>
+        <style>
+            .other-pages {
+                margin:40px;
+                position: relative;
+            }
+            hr{
+	            border-bottom: white;
+	            box-shadow: 0 0.1px 5px #858484;
+                
+                
+
+            }
+       
+
+            .page {
+                position: absolute;
+                left: auto;
+                right: 10px;
+                color: black;
+                font-size: 15px;
+                text-decoration-line: none;
+                font-family:sans-serif;
+            }
+
+            .queries{
+                position: relative;
+                left: 0;
+                margin-left:40px;
+                display: flex;
+                width:50%;
+                align-items: center;
+                
+            }
+
+            .label{
+                position: absolute;
+                left:0;
+                font-family:sans-serif;
+                font-size: 14px;
+
+            }
+
+            .input_box{
+                position: relative;
+                height: 25px;
+                left: 200px;
+                width:100%;
+                
+            }
+
+            .input_box:focus{
+                outline: none;
+                border: 1px solid rgb(73, 134, 247);
+                box-shadow: 0px 0.2px 2px rgb(73, 134, 247) inset;
+                
+                
+               
+            }
+
+            p, form{
+                position: relative;
+                top: 30px;
+                font-size:20px;
+                font-family: sans-serif;
+                
+                
+            }
+
+            p{
+                left: 40px;
+            }
+
+            #adv_button {
+                
+                position: absolute;
+                background-color: rgb(58, 94, 212);
+                color: white;
+                border:rgb(18, 48, 148);
+                height: 30px;
+                width: 150px;
+                right: auto;
+                left: auto;
+                margin-left:50%;
+                top: 250px;
+            }
+
+            h2{
+                color:rgb(197, 2, 2);
+                font-family: sans-serif;
+                font-size: 20px;
+                font-weight: 2 ;
+                position: relative;
+                left:40px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="other-pages">
+            <img src="images.png" alt="google" width="75px">
+            <a href = C:\Users\DELL\Documents\Aska.code\CS50web\week-0\project-1\search\index.html class="page" >Google</a>
+        </div> 
+        <h2>Advanced Search</h2>
+      
+        <hr >
+        <p>Find pages with...</p>
+        <form action="https://www.google.com/search" method="get">
+            <div class="queries">
+                <label for="as_q" class="label">all these words:</label>
+                <input type="text" name="as_q" class="input_box"><br><br>
+            </div>
+             
+            <div class="queries">
+                <label for="as_epq" class="label">exact phrase:</label>
+                <input type="text" name="as_epq" class="input_box"><br><br>
+            </div>
+
+            <div class="queries">
+                <label for="as_oq" class="label">any of these words:</label>
+                <input type="text" name="as_oq" class="input_box"><br><br>
+            </div>
+
+            <div class="queries">
+            <label for="as_eq" class="label">none of these words:</label>
+            <input type="text" name="as_eq" class="input_box"><br><br>
+            </div>
+
+            <button type="submit" id="adv_button">Advanced Search</button>
+          </form>
+    </body>
+</html>
